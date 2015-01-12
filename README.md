@@ -1,2 +1,6 @@
-# Memo.AspnetmvcKnockout
-Sample web application use Visual Studio 2013, KnockoutJS, MongoDB, WebAPI and more.
+Server Side
+IIS,ASP.NET MVC5,WebAPI,Razor,C#,EntityFramework,SQLServer
+Client Side - Javascript
+Javascript,knockout.JS,Jasmine
+Client Side - CSS
+Material-Bootstrap

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html*@
+<style>
+    #input h2 {
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #input .inputs {
+        width: 80%;
+    }
+
+    #input .form-control-wrapper {
+        margin: 30px 0;
+    }
+</style>
+
+<div class="col-xs-12">
+    <div id="input" class="well page active" style="display: block;">
+        <h1 class="header">Add Memo</h1>
+        <div class="inputs">
+            <div class="form-control-wrapper">
+                <textarea data-bind="value: newMemo"
+                          placeholder="Create New Memo" class="form-control empty" id="textId"></textarea><span class="material-input"></span>
+
+                <p data-bind="visible: created">
+                    Check added memo, go to
+                    <a href="/Home/List">memo list page</a>
+                </p>
+            </div>
+        </div>
+        <button class="btn btn-primary" id="submit-button" data-bind="click: save">submit<div class="ripple-wrapper"></div></button>
+        <button class="btn btn-primary" id="clear-button">clear<div class="ripple-wrapper"></div></button>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/apps/createMemo.js"></script>
+}
